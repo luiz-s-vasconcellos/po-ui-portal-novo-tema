@@ -1,0 +1,141 @@
+import{Da as pe,Fa as rg,Ga as vx,Ha as v_,Ii as b,Mr as I1,Ra as ue$1,Si as Xx,Xt as ere,Ya as wg,ai as Sn,dr as DO,gr as Dx,h as Cze,i as Ac,ia as ir,ji as __,ki as Zn,ma as lO,mt as Tze,nr as Ag,qr as Ok,rr as Ax,rt as Qae,sa as jc,ui as UE,va as mt,wr as Fx,xa as nu}from"./chunk-VuVfKKNQ.js";import{n as P,t as M}from"./main-7FOYFSS2.js";var j=(()=>{class n{rowActions={beforeSave:this.onBeforeSave.bind(this),afterSave:this.onAfterSave.bind(this),beforeRemove:this.onBeforeRemove.bind(this),afterRemove:this.onAfterRemove.bind(this),beforeInsert:this.onBeforeInsert.bind(this)};columns=[{property:`id`,label:`Código`,align:`right`,readonly:!0,freeze:!0,width:120},{property:`name`,label:`Nome`,width:`200px`,required:!0},{property:`occupation`,label:`Cargo`,width:150},{property:`email`,label:`E-mail`,width:100,required:!0},{property:`status`,label:`Status`,align:`center`,width:80},{property:`lastActivity`,label:`Última atividade`,align:`center`,width:140}];data=[{id:629131,name:`Jhonatas Silvano`,occupation:`Developer`,email:`jhonatas.silvano@po-ui.com.br`,status:`Active`,lastActivity:`2018-12-12`},{id:78492341,name:`Rafael Gonçalvez`,occupation:`Engineer`,email:`rafael.goncalvez@po-ui.com.br`,status:`Active`,lastActivity:`2018-12-10`},{id:986434,name:`Nicoli Pereira`,occupation:`Developer`,email:`nicoli.pereira@po-ui.com.br`,status:`Active`,lastActivity:`2018-12-12`},{id:4235652,name:`Mauricio João Mendez`,occupation:`Developer`,email:`mauricio.joao@po-ui.com.br`,status:`Active`,lastActivity:`2018-11-23`},{id:629131,name:`Leandro Oliveira`,occupation:`Engineer`,email:`leandro.oliveira@po-ui.com.br`,status:`Active`,lastActivity:`2018-11-30`}];onBeforeSave(a,o){return a.occupation!==`Engineer`}onAfterSave(a){}onBeforeRemove(a){return!0}onAfterRemove(a){}onBeforeInsert(a){return!0}static ɵfac=function(o){return new(o||n)};static ɵcmp=Zn({type:n,selectors:[[`sample-po-grid-basic`]],standalone:!1,decls:1,vars:3,consts:[[3,`p-row-actions`,`p-data`,`p-columns`]],template:function(o,l){o&1&&nu(0,`po-grid`,0),o&2&&UE(`p-row-actions`,l.rowActions)(`p-data`,l.data)(`p-columns`,l.columns)},dependencies:[Cze],encapsulation:2,changeDetection:1})}return n})();var W=n=>({"docs-sample-code-tabs":n});var k=(()=>{class n{hideSampleCodeTabs=!0;sampleCodeButtonLabel=`Talk is cheap, show me the code!`;sampleCodeButtonIcon=`an an-plus`;toggleSampleCodeTabs(){this.hideSampleCodeTabs=!this.hideSampleCodeTabs,this.sampleCodeButtonLabel=this.hideSampleCodeTabs?`Talk is cheap, show me the code!`:`Okay, hide the code`,this.sampleCodeButtonIcon=this.hideSampleCodeTabs?`an an-plus`:`an an-minus`}static ɵfac=function(o){return new(o||n)};static ɵcmp=Zn({type:n,selectors:[[`sample-po-grid-basic-view`]],standalone:!1,decls:24,vars:6,consts:[[1,`sample-blockquote`],[1,`sample-title`,`po-font-text-large-bold`],[1,`show-me-the-code`,3,`click`],[3,`ngClass`],[`p-size`,`2`],[`p-label`,`HTML`,`p-active`,``],[1,`doc-label-path`],[`appCodeHighlight`,``,1,`html`],[`p-label`,`TS`],[`appCodeHighlight`,``,1,`typescript`]],template:function(o,l){o&1&&(nu(0,`br`),jc(1,`blockquote`,0)(2,`label`,1),lO(3,`PO Grid Basic`),wg(),jc(4,`a`,2),mt(`click`,function(){return l.toggleSampleCodeTabs()}),nu(5,`span`),lO(6),wg()(),jc(7,`div`,3)(8,`po-tabs`,4)(9,`po-tab`,5)(10,`div`)(11,`label`,6),lO(12,`sample-po-grid-basic/sample-po-grid-basic.component.html`),wg(),jc(13,`pre`,7),lO(14,`<po-grid [p-row-actions]="rowActions" [p-data]="data" [p-columns]="columns"> </po-grid>
+`),wg()()(),jc(15,`po-tab`,8)(16,`div`)(17,`label`,6),lO(18,`sample-po-grid-basic/sample-po-grid-basic.component.ts`),wg(),jc(19,`pre`,9),lO(20,`import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+@Component({
+  selector: 'sample-po-grid-basic',
+  templateUrl: './sample-po-grid-basic.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  standalone: false
+})
+export class SamplePoGridBasicComponent {
+  rowActions = {
+    beforeSave: this.onBeforeSave.bind(this),
+    afterSave: this.onAfterSave.bind(this),
+    beforeRemove: this.onBeforeRemove.bind(this),
+    afterRemove: this.onAfterRemove.bind(this),
+    beforeInsert: this.onBeforeInsert.bind(this)
+  };
+
+  columns = [
+    { property: 'id', label: 'C\xF3digo', align: 'right', readonly: true, freeze: true, width: 120 },
+    { property: 'name', label: 'Nome', width: '200px', required: true },
+    { property: 'occupation', label: 'Cargo', width: 150 },
+    { property: 'email', label: 'E-mail', width: 100, required: true },
+    { property: 'status', label: 'Status', align: 'center', width: 80 },
+    { property: 'lastActivity', label: '\xDAltima atividade', align: 'center', width: 140 }
+  ];
+
+  data = [
+    {
+      id: 629131,
+      name: 'Jhonatas Silvano',
+      occupation: 'Developer',
+      email: 'jhonatas.silvano@po-ui.com.br',
+      status: 'Active',
+      lastActivity: '2018-12-12'
+    },
+    {
+      id: 78492341,
+      name: 'Rafael Gon\xE7alvez',
+      occupation: 'Engineer',
+      email: 'rafael.goncalvez@po-ui.com.br',
+      status: 'Active',
+      lastActivity: '2018-12-10'
+    },
+    {
+      id: 986434,
+      name: 'Nicoli Pereira',
+      occupation: 'Developer',
+      email: 'nicoli.pereira@po-ui.com.br',
+      status: 'Active',
+      lastActivity: '2018-12-12'
+    },
+    {
+      id: 4235652,
+      name: 'Mauricio Jo\xE3o Mendez',
+      occupation: 'Developer',
+      email: 'mauricio.joao@po-ui.com.br',
+      status: 'Active',
+      lastActivity: '2018-11-23'
+    },
+    {
+      id: 629131,
+      name: 'Leandro Oliveira',
+      occupation: 'Engineer',
+      email: 'leandro.oliveira@po-ui.com.br',
+      status: 'Active',
+      lastActivity: '2018-11-30'
+    }
+  ];
+
+  onBeforeSave(row: any, old: any) {
+    return row.occupation !== 'Engineer';
+  }
+
+  onAfterSave(row) {
+    // console.log('onAfterSave(new): ', row);
+  }
+
+  onBeforeRemove(row) {
+    // console.log('onBeforeRemove: ', row);
+
+    return true;
+  }
+
+  onAfterRemove(row) {
+    // console.log('onAfterRemove: ', row);
+  }
+
+  onBeforeInsert(row) {
+    // console.log('onBeforeInsert: ', row);
+
+    return true;
+  }
+}
+`),wg()()()()(),jc(21,`po-container`),nu(22,`sample-po-grid-basic`),wg(),nu(23,`hr`)),o&2&&(rg(5),Xx(`po-icon `+l.sampleCodeButtonIcon),rg(),Ag(` `,l.sampleCodeButtonLabel),rg(),UE(`ngClass`,DO(4,W,l.hideSampleCodeTabs)))},dependencies:[Ok,P,Ac,Qae,ere,j],encapsulation:2,changeDetection:1})}return n})();var q=(()=>{class n{static ɵfac=function(o){return new(o||n)};static ɵcmp=Zn({type:n,selectors:[[`sample-po-grid-doc`]],standalone:!1,decls:217,vars:0,consts:[[1,`docs-api`],[1,`docs-api-module-import`],[1,`docs-api-class-description`],[1,`docs-api-h3`],[1,`docs-api-class-name`],[1,`doc-code`],[1,`docs-api-directive-selectors`],[1,`docs-api-class-selector-label`],[`appCodeHighlight`,``],[1,`docs-api-h5`,`docs-api-method-header`],[1,`docs-api-properties-table`],[1,`docs-api-properties-header-row`],[1,`docs-api-properties-th`],[1,`docs-api-properties-row`],[1,`docs-api-properties-name-cell`],[1,`docs-api-input-marker`],[1,`docs-api-input-alias`],[1,`docs-api-properties-type-cell`],[`pan`,``,1,`docs-api-property-type`,`Array<any>`],[1,`docs-api-property-default`],[1,`docs-api-property-description`],[`pan`,``,1,`docs-api-property-type`,`PoGridRowActions`],[1,`docs-api-h4`,`docs-api-class-name`],[`pan`,``,1,`docs-api-property-type`,`()`,`=>`,`void`],[`pan`,``,1,`docs-api-property-type`,`(row:`,`any)`,`=>`,`void`],[`pan`,``,1,`docs-api-property-type`,`(row:`,`any)`,`=>`,`boolean`],[`pan`,``,1,`docs-api-property-type`,`(updatedRow:`,`any,`,`originalRow:`,`any)`,`=>`,`boolean`]],template:function(o,l){o&1&&(jc(0,`div`,0)(1,`p`,1)(2,`code`),lO(3,`import { PoGridModule } from '@po-ui/ng-components';`),wg()(),jc(4,`div`,2)(5,`p`),lO(6,`Módulo do componente po-grid.`),wg()(),jc(7,`h3`,3),lO(8,`Componente`),wg(),jc(9,`h4`,4)(10,`code`,5),lO(11,`PoGridComponent`),wg()(),jc(12,`div`,2)(13,`blockquote`)(14,`p`),lO(15,`Componente em desenvolvimento, podendo haver BREAKING CHANGES nas próximas versões.`),wg()(),jc(16,`p`),lO(17,`Componente grid.`),wg(),jc(18,`p`),lO(19,`Ações / atalhos:`),wg(),jc(20,`ul`)(21,`li`),lO(22,`ARROW-UP: Navega para celula superior / Na ultima linha adiciona uma linha em branco no grid;`),wg(),jc(23,`li`),lO(24,`ARROW-DOWN: Navega para celula inferior;`),wg(),jc(25,`li`),lO(26,`ARROW-RIGHT: Navega para celula direita;`),wg(),jc(27,`li`),lO(28,`ARROW-LEFT: Navega para celula esquerda;`),wg(),jc(29,`li`),lO(30,`TAB: Navega para próxima celula;`),wg(),jc(31,`li`),lO(32,`SHIFT+TAB: Navega para celula anterior;`),wg(),jc(33,`li`),lO(34,`CTRL+DEL: Remove linha;`),wg(),jc(35,`li`),lO(36,`DEL/BACKSPACE: Limpa celula;`),wg(),jc(37,`li`),lO(38,`ENTER: Edita linha com valor atual/Confirma edição da celula;`),wg(),jc(39,`li`),lO(40,`DOUBLE-CLICK: Edita linha com valor atual;`),wg(),jc(41,`li`),lO(42,`ESC: Cancela edição da celula / Cancela inserção de linhas em branco;`),wg(),jc(43,`li`),lO(44,`A..Z/0..9: Inicia edição com valor em branco.`),wg()()(),jc(45,`div`,6)(46,`h4`,7),lO(47,`Seletor`),wg(),jc(48,`pre`,8),lO(49,`<po-grid
+    p-columns="Array<any>"
+    p-data="Array<any>"
+    p-row-actions="PoGridRowActions" >
+</po-grid>
+`),wg()(),jc(50,`h4`,9),lO(51,`Propriedades`),wg(),jc(52,`table`,10)(53,`tr`,11)(54,`th`,12),lO(55,`Nome`),wg(),jc(56,`th`,12),lO(57,`Tipo`),wg(),jc(58,`th`,12),lO(59,`Padrão`),wg(),jc(60,`th`,12),lO(61,`Descrição`),wg()(),jc(62,`tr`,13)(63,`td`,14)(64,`div`,15)(65,`span`,16),lO(66,` p-columns`),nu(67,`br`),wg()()(),jc(68,`td`,17)(69,`code`,18),lO(70,`Array<any>`),wg()(),jc(71,`td`,19),lO(72,`-`),wg(),jc(73,`td`,20)(74,`p`),lO(75,`Colunas exibidas no grid.`),wg()()(),jc(76,`tr`,13)(77,`td`,14)(78,`div`,15)(79,`span`,16),lO(80,` p-data`),nu(81,`br`),wg()()(),jc(82,`td`,17)(83,`code`,18),lO(84,`Array<any>`),wg()(),jc(85,`td`,19),lO(86,`-`),wg(),jc(87,`td`,20)(88,`p`),lO(89,`Lista com os dados que serão exibidos no grid.`),wg()()(),jc(90,`tr`,13)(91,`td`,14)(92,`div`,15)(93,`span`,16),lO(94,` p-row-actions`),nu(95,`br`),wg()()(),jc(96,`td`,17)(97,`code`,21),lO(98,`PoGridRowActions`),wg()(),jc(99,`td`,19),lO(100,`-`),wg(),jc(101,`td`,20)(102,`p`),lO(103,`Ações disparadas quando uma linha do grid é manipulada.`),wg()()()(),jc(104,`h3`),lO(105,`Interfaces`),wg(),jc(106,`h4`,22)(107,`code`,5),lO(108,`PoGridRowActions`),wg()(),jc(109,`div`,2)(110,`p`),lO(111,`Ações executadas durante a manipulação das linhas do grid.`),wg()(),jc(112,`h4`,9),lO(113,`Propriedades`),wg(),jc(114,`table`,10)(115,`tr`,11)(116,`th`,12),lO(117,`Nome`),wg(),jc(118,`th`,12),lO(119,`Tipo`),wg(),jc(120,`th`,12),lO(121,`Descrição`),wg()(),jc(122,`tr`,13)(123,`td`,14)(124,`div`,15)(125,`span`,16),lO(126,` afterRemove`),nu(127,`br`),wg()()(),jc(128,`td`,17)(129,`code`,23),lO(130,`() => void`),wg()(),jc(131,`td`,20)(132,`em`)(133,`strong`),lO(134,`(opcional)`),wg()(),jc(135,`p`),lO(136,`Método executado após uma linha do grid ser removida.`),wg()()(),jc(137,`tr`,13)(138,`td`,14)(139,`div`,15)(140,`span`,16),lO(141,` afterSave`),nu(142,`br`),wg()()(),jc(143,`td`,17)(144,`code`,24),lO(145,`(row: any) => void`),wg()(),jc(146,`td`,20)(147,`em`)(148,`strong`),lO(149,`(opcional)`),wg()(),jc(150,`p`),lO(151,`Método executado após uma linha do grid ser salva, ao ser executado, o método irá receber um objeto com os dados atualizados.`),wg()()(),jc(152,`tr`,13)(153,`td`,14)(154,`div`,15)(155,`span`,16),lO(156,` beforeInsert`),nu(157,`br`),wg()()(),jc(158,`td`,17)(159,`code`,25),lO(160,`(row: any) => boolean`),wg()(),jc(161,`td`,20)(162,`em`)(163,`strong`),lO(164,`(opcional)`),wg()(),jc(165,`p`),lO(166,`Método executado antes de uma nova linha ser inserida no grid, se o método retornar algo diferente de `),jc(167,`code`),lO(168,`true`),wg(),lO(169,` a a\xE7\xE3o
+ser\xE1 cancelada e a linha n\xE3o ser\xE1 inserida.`),wg(),jc(170,`p`),lO(171,`Ao ser executado o m\xE9todo ir\xE1 receber a refer\xEAncia do objeto que ser\xE1 inserido, dessa forma \xE9 poss\xEDvel informar valores
+para esse objeto.`),wg(),jc(172,`pre`)(173,`code`),lO(174,`rowActions: PoGridRowActions = {
+  beforeInsert: this.onBeforeInsert.bind(this);
+  ...
+};
+
+// Inicia a linha j\xE1 com as propriedades \`name\` e \`created\` preenchidas.
+onBeforeInsert(row: any) {
+  row.name = 'Fulano';
+  row.created = '2018-20-12';
+  ...
+
+  return true;
+}
+`),wg()()()(),jc(175,`tr`,13)(176,`td`,14)(177,`div`,15)(178,`span`,16),lO(179,` beforeRemove`),nu(180,`br`),wg()()(),jc(181,`td`,17)(182,`code`,25),lO(183,`(row: any) => boolean`),wg()(),jc(184,`td`,20)(185,`em`)(186,`strong`),lO(187,`(opcional)`),wg()(),jc(188,`p`),lO(189,`M\xE9todo executado antes de uma linha ser removida do grid, ao ser executado, o m\xE9todo ir\xE1 receber uma c\xF3pia do objeto
+com os dados da linha que ser\xE1 removida, se o m\xE9todo retornar algo diferente de `),jc(190,`code`),lO(191,`true`),wg(),lO(192,` a a\xE7\xE3o ser\xE1 cancelada e a linha
+n\xE3o ser\xE1 removida.`),wg()()(),jc(193,`tr`,13)(194,`td`,14)(195,`div`,15)(196,`span`,16),lO(197,` beforeSave`),nu(198,`br`),wg()()(),jc(199,`td`,17)(200,`code`,26),lO(201,`(updatedRow: any, originalRow: any) => boolean`),wg()(),jc(202,`td`,20)(203,`em`)(204,`strong`),lO(205,`(opcional)`),wg()(),jc(206,`p`),lO(207,`M\xE9todo executado antes de uma linha ser atualizada, ao ser executado, o m\xE9todo ir\xE1 receber um objeto com os dados atualizados
+e um objeto com uma c\xF3pia dos dados originais, se o m\xE9todo retornar algo diferente de `),jc(208,`code`),lO(209,`true`),wg(),lO(210,` a a\xE7\xE3o ser\xE1 cancelada e
+a linha n\xE3o ser\xE1 atualizada permanecendo em edi\xE7\xE3o / inser\xE7\xE3o.`),wg(),jc(211,`blockquote`)(212,`p`),lO(213,`Caso n\xE3o seja permitido a atualiza\xE7\xE3o da linha, a sugest\xE3o \xE9 que seja apresentada uma mensagem ao usu\xE1rio informando
+o motivo.`),wg()(),jc(214,`pre`)(215,`code`),lO(216,`rowActions: PoGridRowActions = {
+  beforeSave: this.onBeforeSave.bind(this);
+  ...
+};
+
+onBeforeSave(updatedRow: any, originalRow: any) {
+  // Verifica se a propriedade \`name\` foi alterada.
+  if (updatedRow.name !== originalRow.name) {
+    return false;
+  }
+
+  // Verifica se \xE9 menor de idade
+  if (updatedRow.age < 18) {
+    return false;
+  }
+  ...
+
+  updatedRow.updated = '2018-20-12';
+
+  return true;
+}
+`),wg()()()()()())},dependencies:[P],encapsulation:2,changeDetection:1})}return n})();function U(n,Q){if(n&1){let a=Ax();jc(0,`po-tab`,4),mt(`p-click`,function(){v_(a);let l=Fx();return __(l.changeTab(`web`))}),nu(1,`sample-po-grid-basic-view`),wg()}if(n&2){let a=Fx();UE(`p-active`,a.activeTab===`web`)}}var Z=[{path:``,component:(()=>{class n{route;router;sub;hidePoWebSample=!0;samplesLength=1;activeTab=`doc`;actions=[{label:`Documentação`,action:this.goBack.bind(this),icon:`an an-file-text`},{label:`Colabore`,action:this.improveDocs.bind(this)}];constructor(a,o){this.route=a,this.router=o}goBack(){this.router.navigate([`documentation`])}improveDocs(){this.router.navigate([`guides/development-flow`])}ngOnInit(){this.sub=this.route.queryParams.subscribe(a=>{let o=a.view;this.activeTab=o||(this.samplesLength>0?`web`:`doc`),this.hidePoWebSample=this.samplesLength===0})}changeTab(a){this.router.navigate([],{queryParams:{view:a},queryParamsHandling:`merge`}),this.activeTab=a}ngOnDestroy(){this.sub.unsubscribe()}static ɵfac=function(o){return new(o||n)(b(ir),b(Sn))};static ɵcmp=Zn({type:n,selectors:[[`ng-component`]],standalone:!1,decls:5,vars:3,consts:[[`p-title`,`Grid`,3,`p-actions`],[`p-size`,`1`],[`p-label`,`Exemplos`,3,`p-active`],[`p-label`,`Documentação`,3,`p-click`,`p-active`],[`p-label`,`Exemplos`,3,`p-click`,`p-active`]],template:function(o,l){o&1&&(jc(0,`po-page-default`,0)(1,`po-tabs`,1),vx(2,U,2,1,`po-tab`,2),jc(3,`po-tab`,3),mt(`p-click`,function(){return l.changeTab(`doc`)}),nu(4,`sample-po-grid-doc`),wg()()()),o&2&&(UE(`p-actions`,l.actions),rg(2),Dx(l.hidePoWebSample?-1:2),rg(),UE(`p-active`,l.activeTab===`doc`))},dependencies:[Tze,Qae,ere,k,q],encapsulation:2,changeDetection:1})}return n})()}];var z=(()=>{class n{static ɵfac=function(o){return new(o||n)};static ɵmod=pe({type:n});static ɵinj=ue$1({imports:[I1.forChild(Z),I1]})}return n})();var ue=(()=>{class n{static ɵfac=function(o){return new(o||n)};static ɵmod=pe({type:n});static ɵinj=ue$1({imports:[M,z]})}return n})();export{ue as DocPoGridModule};
