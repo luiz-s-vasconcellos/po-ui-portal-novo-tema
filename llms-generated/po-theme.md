@@ -11,5 +11,6 @@ Interface para o método `setTheme()`.
 | Propriedade | Tipo | Opcional | Descrição |
 |---|---|---|---|
 | `active` | `PoThemeTypeEnum | PoThemeActive` | sim | Tipo e nível de acessibilidade de tema ativo |
+| `inheritDefaultStyle` | `boolean` | sim | Define se o tema herda a identidade visual do tema padrão do PO UI. |
 | `name` | `string` | não | Nome para o tema: |
 | `type` | `PoThemeType | Array<PoThemeType>` | não | Tipo de tema: |

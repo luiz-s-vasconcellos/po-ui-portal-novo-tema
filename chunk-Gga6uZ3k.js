@@ -1,0 +1,32 @@
+import{Ai as Zn,Ia as rg,Ka as vx,Li as b,Mi as __,Mn as ure,Nr as I1,Oa as pe,Sa as nu,Tr as Fx,Ua as v_,Xa as wg,_r as Dx,_t as Vze,aa as ir,ca as jc,di as UE,ha as lO,ir as Ax,ln as lre,oi as Sn,ya as mt,za as ue}from"./chunk-CtaZqRb_.js";import{n as P,t as M}from"./main-ZQ7GH27Y.js";var _=(()=>{class o{static ɵfac=function(n){return new(n||o)};static ɵcmp=Zn({type:o,selectors:[[`sample-po-list-view-detail-template-doc`]],standalone:!1,decls:107,vars:0,consts:[[1,`docs-api`],[1,`docs-api-module-import`],[1,`docs-api-class-description`],[1,`docs-api-h3`],[1,`docs-api-class-name`],[1,`doc-code`],[`href`,`/documentation/po-list-view`],[1,`docs-api-directive-selectors`],[1,`docs-api-class-selector-label`],[`appCodeHighlight`,``],[1,`docs-api-h5`,`docs-api-method-header`],[1,`docs-api-properties-table`],[1,`docs-api-properties-header-row`],[1,`docs-api-properties-th`],[1,`docs-api-properties-row`],[1,`docs-api-properties-name-cell`],[1,`docs-api-input-marker`],[1,`docs-api-input-alias`],[1,`docs-api-properties-type-cell`],[`pan`,``,1,`docs-api-property-type`,`(item)`,`=>`,`boolean`],[1,`docs-api-property-default`],[1,`docs-api-property-description`]],template:function(n,l){n&1&&(jc(0,`div`,0)(1,`p`,1)(2,`code`),lO(3,`import { PoListViewModule } from '@po-ui/ng-components';`),wg()(),jc(4,`div`,2)(5,`p`),lO(6,`Módulo do componente `),jc(7,`code`),lO(8,`po-list-view`),wg(),lO(9,`.`),wg()(),jc(10,`h3`,3),lO(11,`Componente`),wg(),jc(12,`h4`,4)(13,`code`,5),lO(14,`PoListViewDetailTemplateDirective`),wg()(),jc(15,`div`,2)(16,`p`),lO(17,`Esta diretiva permite que sejam apresentadas informa\xE7\xF5es adicionais de cada item, construindo um
+bot\xE3o `),jc(18,`code`),lO(19,`Exibir detalhes`),wg(),lO(20,` abaixo do conteúdo principal do item.`),wg(),jc(21,`p`),lO(22,`Deve-se utilizar como parâmetro a referência do item e/ou índice, sendo por padrão o item.`),wg(),jc(23,`ul`)(24,`li`),lO(25,`Item: `),jc(26,`code`),lO(27,`item`),wg(),lO(28,` determina o item da linha corrente.`),wg(),jc(29,`li`),lO(30,`Índice: `),jc(31,`code`),lO(32,`index`),wg(),lO(33,` determina o índice da linha corrente.`),wg()(),jc(34,`p`),lO(35,`Esta diretiva pode ser usada de duas formas: explícita ou `),jc(36,`em`),lO(37,`syntax sugar`),wg(),lO(38,`. Veja a seguir ambos, respectivamente:`),wg(),jc(39,`pre`)(40,`code`),lO(41,`...
+<po-list-view
+  p-property-title="name"
+  [p-items]="items">
+
+  <ng-template p-list-view-detail-template let-item let-code="index">
+    <div class="po-row">
+      <po-info class="po-md-6" p-label="Code" [p-value]="code"></po-info>
+      <po-info class="po-md-12" p-label="Email" [p-value]="item.email"></po-info>
+    </div>
+  </ng-template>
+
+</po-list-view>
+
+...
+`),wg()(),jc(42,`pre`)(43,`code`),lO(44,`...
+<po-list-view
+   p-property-title="name"
+   [p-items]="items">
+   <div *p-list-view-detail-template="let item, let i=index" class="po-row">
+     <po-info class="po-md-12" p-label="Email" [p-value]="item.email"></po-info>
+   </div>
+</po-list-view>
+...
+`),wg()(),jc(45,`blockquote`)(46,`p`),lO(47,`O modo de exibi\xE7\xE3o do detalhe \xE9 definido pela propriedade
+`),jc(48,`a`,6)(49,`code`),lO(50,`p-detail-display`),wg()(),lO(51,` do `),jc(52,`code`),lO(53,`po-list-view`),wg(),lO(54,`, que utiliza os valores do
+enum `),jc(55,`code`),lO(56,`PoListViewDetailDisplay`),wg(),lO(57,`:`),wg()(),jc(58,`ul`)(59,`li`)(60,`code`),lO(61,`inline`),wg(),lO(62,`: expande o conteúdo do detalhe abaixo do item (padrão);`),wg(),jc(63,`li`)(64,`code`),lO(65,`modal`),wg(),lO(66,`: exibe o conteúdo do detalhe no corpo de um `),jc(67,`code`),lO(68,`po-modal`),wg(),lO(69,`.`),wg()()(),jc(70,`div`,7)(71,`h4`,8),lO(72,`Seletor`),wg(),jc(73,`pre`,9),lO(74,`<[p-list-view-detail-template]
+    p-show-detail="(item) => boolean" >
+</[p-list-view-detail-template]>
+`),wg()(),jc(75,`h4`,10),lO(76,`Propriedades`),wg(),jc(77,`table`,11)(78,`tr`,12)(79,`th`,13),lO(80,`Nome`),wg(),jc(81,`th`,13),lO(82,`Tipo`),wg(),jc(83,`th`,13),lO(84,`Padrão`),wg(),jc(85,`th`,13),lO(86,`Descrição`),wg()(),jc(87,`tr`,14)(88,`td`,15)(89,`div`,16)(90,`span`,17),lO(91,` p-show-detail`),nu(92,`br`),wg()()(),jc(93,`td`,18)(94,`code`,19),lO(95,`(item) => boolean`),wg()(),jc(96,`td`,20),lO(97,`-`),wg(),jc(98,`td`,21)(99,`em`)(100,`strong`),lO(101,`(opcional)`),wg()(),jc(102,`p`),lO(103,`Função que deve retornar um valor do tipo `),jc(104,`code`),lO(105,`boolean`),wg(),lO(106,`, que ser\xE1 utilizado como a valida\xE7\xE3o para que o detalhe de item
+da lista inicie aberto ou fechado.`),wg()()()()())},dependencies:[P],encapsulation:2,changeDetection:1})}return o})();function q(o,I){if(o&1){let a=Ax();jc(0,`po-tab`,4),mt(`p-click`,function(){v_(a);let l=Fx();return __(l.changeTab(`web`))}),wg()}if(o&2){let a=Fx();UE(`p-active`,a.activeTab===`web`)}}var j=[{path:``,component:(()=>{class o{route;router;sub;hidePoWebSample=!0;samplesLength=0;activeTab=`doc`;actions=[{label:`Documentação`,action:this.goBack.bind(this),icon:`an an-file-text`},{label:`Colabore`,action:this.improveDocs.bind(this)}];constructor(a,n){this.route=a,this.router=n}goBack(){this.router.navigate([`documentation`])}improveDocs(){this.router.navigate([`guides/development-flow`])}ngOnInit(){this.sub=this.route.queryParams.subscribe(a=>{let n=a.view;this.activeTab=n||(this.samplesLength>0?`web`:`doc`),this.hidePoWebSample=this.samplesLength===0})}changeTab(a){this.router.navigate([],{queryParams:{view:a},queryParamsHandling:`merge`}),this.activeTab=a}ngOnDestroy(){this.sub.unsubscribe()}static ɵfac=function(n){return new(n||o)(b(ir),b(Sn))};static ɵcmp=Zn({type:o,selectors:[[`ng-component`]],standalone:!1,decls:5,vars:3,consts:[[`p-title`,`List View Detail Template`,3,`p-actions`],[`p-size`,`1`],[`p-label`,`Exemplos`,3,`p-active`],[`p-label`,`Documentação`,3,`p-click`,`p-active`],[`p-label`,`Exemplos`,3,`p-click`,`p-active`]],template:function(n,l){n&1&&(jc(0,`po-page-default`,0)(1,`po-tabs`,1),vx(2,q,1,1,`po-tab`,2),jc(3,`po-tab`,3),mt(`p-click`,function(){return l.changeTab(`doc`)}),nu(4,`sample-po-list-view-detail-template-doc`),wg()()()),n&2&&(UE(`p-actions`,l.actions),rg(2),Dx(l.hidePoWebSample?-1:2),rg(),UE(`p-active`,l.activeTab===`doc`))},dependencies:[Vze,lre,ure,_],encapsulation:2,changeDetection:1})}return o})()}];var k=(()=>{class o{static ɵfac=function(n){return new(n||o)};static ɵmod=pe({type:o});static ɵinj=ue({imports:[I1.forChild(j),I1]})}return o})();var Y=(()=>{class o{static ɵfac=function(n){return new(n||o)};static ɵmod=pe({type:o});static ɵinj=ue({imports:[M,k]})}return o})();export{Y as DocPoListViewDetailTemplateModule};
