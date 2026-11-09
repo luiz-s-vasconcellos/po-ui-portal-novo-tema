@@ -26,8 +26,11 @@ a propriedade `p-iso-format` provê esse controle independentemente do formato d
 - Formato de entrada (Date) - `new Date(2017, 10, 28)` e saída (E8601DAw) - `'2017-11-28'`;
 *Importante:**
 
-- Para utilizar datas com ano inferior a 100, verificar o comportamento do [`new Date`](https://www.w3schools.com/js/js_dates.asp)
-e utilizar o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp).
+- São aceitas datas com ano entre 0000 e 9999. No calendário, além dos anos listados no seletor, é possível
+digitar qualquer ano com 4 dígitos.
+- Datas no formato ISO (ex.: `'0050-05-10'`) com ano inferior a 100 são mantidas. Ao informar um objeto `Date`
+com ano inferior a 100, utilize o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp),
+pois o [`new Date`](https://www.w3schools.com/js/js_dates.asp) converte esses anos para 19XX.
 - Caso a data esteja inválida, o `model` receberá **'Data inválida'**.
 - Caso o `input` esteja passando um `[(ngModel)]`, mas não tenha um `name`, então irá ocorrer um erro
 do próprio Angular (`[ngModelOptions]="{standalone: true}"`).

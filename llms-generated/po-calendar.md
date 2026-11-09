@@ -21,6 +21,11 @@ Este componente pode receber os seguintes formatos de data:
 > O valor é tratado internamente como **yyyy-mm-dd**.
 *Importante:**
 - Datas fora do intervalo (`p-min-date` / `p-max-date`) aparecem desabilitadas sem alterar o *model*.
+- São aceitos anos entre 0000 e 9999. No seletor de ano do cabeçalho é possível digitar qualquer ano com
+4 dígitos, mesmo que não esteja listado, e a navegação é bloqueada nos limites desse intervalo.
+- Datas no formato ISO (ex.: `'0050-05-10'`) com ano inferior a 100 são mantidas. Ao informar um objeto `Date`
+com ano inferior a 100, utilize o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp),
+pois o [`new Date`](https://www.w3schools.com/js/js_dates.asp) converte esses anos para 19XX.
 
 #### Boas práticas
 
@@ -109,3 +114,9 @@ garantindo visibilidade para usuários que utilizam teclado. [WCAG 2.4.12: Focus
 |---|---|---|---|
 | `change` | `'p-change'` | `EventEmitter` | Evento disparado ao alterar o valor do model. |
 | `changeMonthYear` | `'p-change-month-year'` | `EventEmitter` | Evento disparado ao alterar o mês ou o ano no cabeçalho do calendário. |
+
+## Métodos
+
+### `scrollToSelectedYear()`
+
+Centraliza na lista o ano selecionado, ou o ano atual quando não houver seleção, caso ele não esteja visível.

@@ -29,6 +29,9 @@ O formato de saída do *model* é sempre ISO 8601 com timezone local: `'yyyy-mm-
 - O valor emitido no model inclui o offset do timezone local do navegador.
 - Ao receber um valor com timezone, o componente converte automaticamente para horário local.
 - Caso a data/hora esteja inválida, o `model` receberá a mensagem de erro localizada.
+- Datas no formato ISO (ex.: `'0050-05-10'`) com ano inferior a 100 são mantidas. Ao informar um objeto `Date`
+com ano inferior a 100, utilize o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp),
+pois o [`new Date`](https://www.w3schools.com/js/js_dates.asp) converte esses anos para 19XX.
 - Caso o `input` esteja passando um `[(ngModel)]`, mas não tenha um `name`, então irá ocorrer um erro
 do próprio Angular (`[ngModelOptions]="{standalone: true}"`).
 

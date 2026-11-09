@@ -1135,36 +1135,18 @@ Algumas diretrizes de acessibilidade já são tratadas no componente, internamen
 | `--color-disabled` | Cor principal no estado disabled | `var(--color-action-disabled)` |
 | `--background-color-disabled` | Cor de background no estado disabled | `var(--color-transparent)` |
 | **Glow** (`p-kind="glow"`) | | |
-| `--color-glow` | Cor de background do botão | `var(--color-action-default)` |
-| `--text-color-glow` | Cor do texto | `var(--color-neutral-light-00)` |
-| `--color-glow-hover-start` | Cor inicial do gradiente no estado hover | `var(--color-brand-01-base)` |
-| `--color-glow-hover-end` | Cor final do gradiente no estado hover | `var(--color-brand-01-dark)` |
 | `--color-glow-highlight` | Cor do reflexo no estado hover | `var(--color-brand-01-light)` |
-| `--color-glow-pressed` | Cor de background no estado pressionado | `var(--color-action-pressed)` |
-| `--color-glow-ring` | Cor do brilho que percorre a borda | `var(--color-neutral-light-00)` |
-| `--color-glow-inner` | Cor do brilho interno no estado hover | `var(--color-neutral-light-00)` |
-| `--color-glow-halo` | Cor do halo externo e da sombra no estado hover | `var(--color-action-default)` |
-| `--border-width-glow` | Espessura do brilho que percorre a borda | `var(--border-width-md)` |
-| `--size-glow-ring-dot` | Diâmetro de cada ponto do brilho da borda | `var(--spacing-xl)` |
-| `--size-glow-halo-dot` | Diâmetro de cada ponto do halo externo | `var(--spacing-2xl)` |
-| `--spacing-glow-path` | Distância entre a borda e o caminho do brilho | `var(--border-width-sm)` |
-| `--blur-glow-halo` | Intensidade do desfoque do halo externo | `var(--spacing-sm)` |
-| `--opacity-glow-halo` | Opacidade do halo externo | `0.3` |
-| `--opacity-glow-halo-hover` | Opacidade do halo externo no estado hover | `0.5` |
-| `--opacity-glow-inner` | Opacidade do brilho interno no estado hover | `0.55` |
-| `--duration-glow-lap` | Duração de uma volta completa do brilho | `3200ms` |
-| `--duration-glow-step` | Intervalo entre os pontos da cauda do brilho | `30ms` |
-| `--duration-glow-state` | Duração da transição entre estados | `var(--duration-extra-slow)` |
-| `--timing-glow` | Curva de aceleração da transição entre estados | `var(--timing-exiting)` |
-| `--scale-glow-pressed` | Escala do botão no estado pressionado | `0.98` |
-| `--glow-trail-start` | Ângulo inicial da cauda (apenas no fallback\*) | `252deg` |
-| `--spacing-glow-halo` | Expansão do halo externo (apenas no fallback\*) | `var(--spacing-xxs)` |
+| `--color-glow-ring` | Cor do brilho da borda e do brilho interno (hover) | `var(--color-neutral-light-00)` |
+| `--glow-animation-duration` | Duração de uma volta completa do brilho | `3200ms` |
+| `--glow-transition-duration` | Duração da transição entre estados | `var(--duration-extra-slow)` |
+| `--glow-transition-timing` | Curva de aceleração da transição entre estados | `var(--timing-exiting)` |
 
-> \* O brilho percorre a borda com velocidade constante via `offset-path`. Em navegadores sem suporte a
-`offset-path` com formas básicas (Chrome No estilo `glow`, a animação é interrompida quando o botão está desabilitado ou em carregamento,
+> No estilo `glow`, o botão reutiliza os tokens `--color`, `--text-color`, `--color-hover`, `--color-pressed` e
+`--border-width`. O brilho percorre a borda com velocidade constante via `offset-path`. Em navegadores sem
+suporte a `offset-path` com formas básicas (Chrome No estilo `glow`, a animação é interrompida quando o botão está desabilitado ou em carregamento,
 e também quando o sistema operacional do usuário solicita redução de movimento (`prefers-reduced-motion`).
 
-> No tema escuro, `--color-glow-ring` e `--color-glow-inner` usam `var(--color-neutral-dark-95)`, para que o brilho
+> No tema escuro, `--color-glow-ring` usa `var(--color-neutral-dark-95)`, para que o brilho
 continue claro apesar da inversão da escala neutra.
 
 ## Inputs
@@ -1279,36 +1261,18 @@ Algumas diretrizes de acessibilidade já são tratadas no componente, internamen
 | `--color-disabled` | Cor principal no estado disabled | `var(--color-action-disabled)` |
 | `--background-color-disabled` | Cor de background no estado disabled | `var(--color-transparent)` |
 | **Glow** (`p-kind="glow"`) | | |
-| `--color-glow` | Cor de background do botão | `var(--color-action-default)` |
-| `--text-color-glow` | Cor do texto | `var(--color-neutral-light-00)` |
-| `--color-glow-hover-start` | Cor inicial do gradiente no estado hover | `var(--color-brand-01-base)` |
-| `--color-glow-hover-end` | Cor final do gradiente no estado hover | `var(--color-brand-01-dark)` |
 | `--color-glow-highlight` | Cor do reflexo no estado hover | `var(--color-brand-01-light)` |
-| `--color-glow-pressed` | Cor de background no estado pressionado | `var(--color-action-pressed)` |
-| `--color-glow-ring` | Cor do brilho que percorre a borda | `var(--color-neutral-light-00)` |
-| `--color-glow-inner` | Cor do brilho interno no estado hover | `var(--color-neutral-light-00)` |
-| `--color-glow-halo` | Cor do halo externo e da sombra no estado hover | `var(--color-action-default)` |
-| `--border-width-glow` | Espessura do brilho que percorre a borda | `var(--border-width-md)` |
-| `--size-glow-ring-dot` | Diâmetro de cada ponto do brilho da borda | `var(--spacing-xl)` |
-| `--size-glow-halo-dot` | Diâmetro de cada ponto do halo externo | `var(--spacing-2xl)` |
-| `--spacing-glow-path` | Distância entre a borda e o caminho do brilho | `var(--border-width-sm)` |
-| `--blur-glow-halo` | Intensidade do desfoque do halo externo | `var(--spacing-sm)` |
-| `--opacity-glow-halo` | Opacidade do halo externo | `0.3` |
-| `--opacity-glow-halo-hover` | Opacidade do halo externo no estado hover | `0.5` |
-| `--opacity-glow-inner` | Opacidade do brilho interno no estado hover | `0.55` |
-| `--duration-glow-lap` | Duração de uma volta completa do brilho | `3200ms` |
-| `--duration-glow-step` | Intervalo entre os pontos da cauda do brilho | `30ms` |
-| `--duration-glow-state` | Duração da transição entre estados | `var(--duration-extra-slow)` |
-| `--timing-glow` | Curva de aceleração da transição entre estados | `var(--timing-exiting)` |
-| `--scale-glow-pressed` | Escala do botão no estado pressionado | `0.98` |
-| `--glow-trail-start` | Ângulo inicial da cauda (apenas no fallback\*) | `252deg` |
-| `--spacing-glow-halo` | Expansão do halo externo (apenas no fallback\*) | `var(--spacing-xxs)` |
+| `--color-glow-ring` | Cor do brilho da borda e do brilho interno (hover) | `var(--color-neutral-light-00)` |
+| `--glow-animation-duration` | Duração de uma volta completa do brilho | `3200ms` |
+| `--glow-transition-duration` | Duração da transição entre estados | `var(--duration-extra-slow)` |
+| `--glow-transition-timing` | Curva de aceleração da transição entre estados | `var(--timing-exiting)` |
 
-> \* O brilho percorre a borda com velocidade constante via `offset-path`. Em navegadores sem suporte a
-`offset-path` com formas básicas (Chrome No estilo `glow`, a animação é interrompida quando o botão está desabilitado ou em carregamento,
+> No estilo `glow`, o botão reutiliza os tokens `--color`, `--text-color`, `--color-hover`, `--color-pressed` e
+`--border-width`. O brilho percorre a borda com velocidade constante via `offset-path`. Em navegadores sem
+suporte a `offset-path` com formas básicas (Chrome No estilo `glow`, a animação é interrompida quando o botão está desabilitado ou em carregamento,
 e também quando o sistema operacional do usuário solicita redução de movimento (`prefers-reduced-motion`).
 
-> No tema escuro, `--color-glow-ring` e `--color-glow-inner` usam `var(--color-neutral-dark-95)`, para que o brilho
+> No tema escuro, `--color-glow-ring` usa `var(--color-neutral-dark-95)`, para que o brilho
 continue claro apesar da inversão da escala neutra.
 
 ## Inputs
@@ -1492,6 +1456,11 @@ Este componente pode receber os seguintes formatos de data:
 > O valor é tratado internamente como **yyyy-mm-dd**.
 *Importante:**
 - Datas fora do intervalo (`p-min-date` / `p-max-date`) aparecem desabilitadas sem alterar o *model*.
+- São aceitos anos entre 0000 e 9999. No seletor de ano do cabeçalho é possível digitar qualquer ano com
+4 dígitos, mesmo que não esteja listado, e a navegação é bloqueada nos limites desse intervalo.
+- Datas no formato ISO (ex.: `'0050-05-10'`) com ano inferior a 100 são mantidas. Ao informar um objeto `Date`
+com ano inferior a 100, utilize o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp),
+pois o [`new Date`](https://www.w3schools.com/js/js_dates.asp) converte esses anos para 19XX.
 
 #### Boas práticas
 
@@ -1580,6 +1549,12 @@ garantindo visibilidade para usuários que utilizam teclado. [WCAG 2.4.12: Focus
 |---|---|---|---|
 | `change` | `'p-change'` | `EventEmitter` | Evento disparado ao alterar o valor do model. |
 | `changeMonthYear` | `'p-change-month-year'` | `EventEmitter` | Evento disparado ao alterar o mês ou o ano no cabeçalho do calendário. |
+
+## Métodos
+
+### `scrollToSelectedYear()`
+
+Centraliza na lista o ano selecionado, ou o ano atual quando não houver seleção, caso ele não esteja visível.
 
 
 ---
@@ -2453,8 +2428,11 @@ a propriedade `p-iso-format` provê esse controle independentemente do formato d
 - Formato de entrada (Date) - `new Date(2017, 10, 28)` e saída (E8601DAw) - `'2017-11-28'`;
 *Importante:**
 
-- Para utilizar datas com ano inferior a 100, verificar o comportamento do [`new Date`](https://www.w3schools.com/js/js_dates.asp)
-e utilizar o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp).
+- São aceitas datas com ano entre 0000 e 9999. No calendário, além dos anos listados no seletor, é possível
+digitar qualquer ano com 4 dígitos.
+- Datas no formato ISO (ex.: `'0050-05-10'`) com ano inferior a 100 são mantidas. Ao informar um objeto `Date`
+com ano inferior a 100, utilize o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp),
+pois o [`new Date`](https://www.w3schools.com/js/js_dates.asp) converte esses anos para 19XX.
 - Caso a data esteja inválida, o `model` receberá **'Data inválida'**.
 - Caso o `input` esteja passando um `[(ngModel)]`, mas não tenha um `name`, então irá ocorrer um erro
 do próprio Angular (`[ngModelOptions]="{standalone: true}"`).
@@ -2629,6 +2607,9 @@ Importante:
 
 - Quando preenchidas a data inicial e final, a data inicial deve ser sempre menor ou igual a data final;
 - Ao passar uma data inválida via codificação, o valor será mantido no *model* e o `input` da tela aparecerá vazio;
+- Datas no formato ISO (ex.: `'0050-05-10'`) com ano inferior a 100 são mantidas. Ao informar um objeto `Date`
+com ano inferior a 100, utilize o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp),
+pois o [`new Date`](https://www.w3schools.com/js/js_dates.asp) converte esses anos para 19XX;
 - Permite trabalhar com as duas datas separadamente através das propriedades `p-start-date` e `p-end-date` no lugar do
 `[(ngModel)]`, no entanto sem a validação do formulário;
 - Para a validação do formulário, utilize o `[(ngModel)]`.
@@ -2756,6 +2737,9 @@ O formato de saída do *model* é sempre ISO 8601 com timezone local: `'yyyy-mm-
 - O valor emitido no model inclui o offset do timezone local do navegador.
 - Ao receber um valor com timezone, o componente converte automaticamente para horário local.
 - Caso a data/hora esteja inválida, o `model` receberá a mensagem de erro localizada.
+- Datas no formato ISO (ex.: `'0050-05-10'`) com ano inferior a 100 são mantidas. Ao informar um objeto `Date`
+com ano inferior a 100, utilize o método [`setFullYear`](https://www.w3schools.com/jsref/jsref_setfullyear.asp),
+pois o [`new Date`](https://www.w3schools.com/js/js_dates.asp) converte esses anos para 19XX.
 - Caso o `input` esteja passando um `[(ngModel)]`, mas não tenha um `name`, então irá ocorrer um erro
 do próprio Angular (`[ngModelOptions]="{standalone: true}"`).
 

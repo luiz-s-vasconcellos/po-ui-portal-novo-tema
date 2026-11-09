@@ -66,36 +66,18 @@ Algumas diretrizes de acessibilidade já são tratadas no componente, internamen
 | `--color-disabled` | Cor principal no estado disabled | `var(--color-action-disabled)` |
 | `--background-color-disabled` | Cor de background no estado disabled | `var(--color-transparent)` |
 | **Glow** (`p-kind="glow"`) | | |
-| `--color-glow` | Cor de background do botão | `var(--color-action-default)` |
-| `--text-color-glow` | Cor do texto | `var(--color-neutral-light-00)` |
-| `--color-glow-hover-start` | Cor inicial do gradiente no estado hover | `var(--color-brand-01-base)` |
-| `--color-glow-hover-end` | Cor final do gradiente no estado hover | `var(--color-brand-01-dark)` |
 | `--color-glow-highlight` | Cor do reflexo no estado hover | `var(--color-brand-01-light)` |
-| `--color-glow-pressed` | Cor de background no estado pressionado | `var(--color-action-pressed)` |
-| `--color-glow-ring` | Cor do brilho que percorre a borda | `var(--color-neutral-light-00)` |
-| `--color-glow-inner` | Cor do brilho interno no estado hover | `var(--color-neutral-light-00)` |
-| `--color-glow-halo` | Cor do halo externo e da sombra no estado hover | `var(--color-action-default)` |
-| `--border-width-glow` | Espessura do brilho que percorre a borda | `var(--border-width-md)` |
-| `--size-glow-ring-dot` | Diâmetro de cada ponto do brilho da borda | `var(--spacing-xl)` |
-| `--size-glow-halo-dot` | Diâmetro de cada ponto do halo externo | `var(--spacing-2xl)` |
-| `--spacing-glow-path` | Distância entre a borda e o caminho do brilho | `var(--border-width-sm)` |
-| `--blur-glow-halo` | Intensidade do desfoque do halo externo | `var(--spacing-sm)` |
-| `--opacity-glow-halo` | Opacidade do halo externo | `0.3` |
-| `--opacity-glow-halo-hover` | Opacidade do halo externo no estado hover | `0.5` |
-| `--opacity-glow-inner` | Opacidade do brilho interno no estado hover | `0.55` |
-| `--duration-glow-lap` | Duração de uma volta completa do brilho | `3200ms` |
-| `--duration-glow-step` | Intervalo entre os pontos da cauda do brilho | `30ms` |
-| `--duration-glow-state` | Duração da transição entre estados | `var(--duration-extra-slow)` |
-| `--timing-glow` | Curva de aceleração da transição entre estados | `var(--timing-exiting)` |
-| `--scale-glow-pressed` | Escala do botão no estado pressionado | `0.98` |
-| `--glow-trail-start` | Ângulo inicial da cauda (apenas no fallback\*) | `252deg` |
-| `--spacing-glow-halo` | Expansão do halo externo (apenas no fallback\*) | `var(--spacing-xxs)` |
+| `--color-glow-ring` | Cor do brilho da borda e do brilho interno (hover) | `var(--color-neutral-light-00)` |
+| `--glow-animation-duration` | Duração de uma volta completa do brilho | `3200ms` |
+| `--glow-transition-duration` | Duração da transição entre estados | `var(--duration-extra-slow)` |
+| `--glow-transition-timing` | Curva de aceleração da transição entre estados | `var(--timing-exiting)` |
 
-> \* O brilho percorre a borda com velocidade constante via `offset-path`. Em navegadores sem suporte a
-`offset-path` com formas básicas (Chrome No estilo `glow`, a animação é interrompida quando o botão está desabilitado ou em carregamento,
+> No estilo `glow`, o botão reutiliza os tokens `--color`, `--text-color`, `--color-hover`, `--color-pressed` e
+`--border-width`. O brilho percorre a borda com velocidade constante via `offset-path`. Em navegadores sem
+suporte a `offset-path` com formas básicas (Chrome No estilo `glow`, a animação é interrompida quando o botão está desabilitado ou em carregamento,
 e também quando o sistema operacional do usuário solicita redução de movimento (`prefers-reduced-motion`).
 
-> No tema escuro, `--color-glow-ring` e `--color-glow-inner` usam `var(--color-neutral-dark-95)`, para que o brilho
+> No tema escuro, `--color-glow-ring` usa `var(--color-neutral-dark-95)`, para que o brilho
 continue claro apesar da inversão da escala neutra.
 
 ## Inputs
