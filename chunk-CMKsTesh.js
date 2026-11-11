@@ -1,0 +1,172 @@
+import{n as P,t as M}from"./main-G4GMLTOQ.js";import{$ as R4,Ei as WV,Fr as Jc,H as Mze,Hi as ar,Ii as ZO,Ji as eF,L as Lb,Li as Zb,Mi as Y0,Mn as tre,Mt as are,Nr as Ig,Oa as qL,Or as H_,Ot as Zte,Pr as JL,Ri as Zg,Rr as Jn,Ti as W0,U as Nf,Vi as _u,Vr as Kb,Yr as NZ,Zn as $_,Zr as No,an as j4,b as Eo,cr as Bk,ea as ge$1,eo as xo,er as Ab,fi as RZ,gi as Tk,hi as TZ,ir as BO,j as I4,jr as I,no as yk,nr as An,pr as Cu,qa as vt,qi as de$1,qt as die,rn as ia,tr as Ak,va as nk,vn as oi,xi as VO,ya as nm}from"./chunk-BJubg121.js";var le=(()=>{class i{static ɵfac=function(a){return new(a||i)};static ɵcmp=Jn({type:i,selectors:[[`sample-po-toaster-basic`]],standalone:!1,decls:2,vars:0,consts:[[1,`po-row`],[`p-message`,`Toaster Basic - Information`,`p-type`,`information`,1,`po-md-12`]],template:function(a,n){a&1&&(Jc(0,`div`,0),_u(1,`po-toaster`,1),Zg())},dependencies:[die],encapsulation:2,changeDetection:1})}return i})();var be=i=>({"docs-sample-code-tabs":i});var pe=(()=>{class i{hideSampleCodeTabs=!0;sampleCodeButtonLabel=`Talk is cheap, show me the code!`;sampleCodeButtonIcon=`an an-plus`;toggleSampleCodeTabs(){this.hideSampleCodeTabs=!this.hideSampleCodeTabs,this.sampleCodeButtonLabel=this.hideSampleCodeTabs?`Talk is cheap, show me the code!`:`Okay, hide the code`,this.sampleCodeButtonIcon=this.hideSampleCodeTabs?`an an-plus`:`an an-minus`}static ɵfac=function(a){return new(a||i)};static ɵcmp=Jn({type:i,selectors:[[`sample-po-toaster-basic-view`]],standalone:!1,decls:24,vars:6,consts:[[1,`sample-blockquote`],[1,`sample-title`,`po-font-text-large-bold`],[1,`show-me-the-code`,3,`click`],[3,`ngClass`],[`p-size`,`2`],[`p-label`,`HTML`,`p-active`,``],[1,`doc-label-path`],[`appCodeHighlight`,``,1,`html`],[`p-label`,`TS`],[`appCodeHighlight`,``,1,`typescript`],[1,`docs-sample-container`]],template:function(a,n){a&1&&(_u(0,`br`),Jc(1,`blockquote`,0)(2,`label`,1),Tk(3,`PO Toaster Basic`),Zg(),Jc(4,`a`,2),vt(`click`,function(){return n.toggleSampleCodeTabs()}),_u(5,`span`),Tk(6),Zg()(),Jc(7,`div`,3)(8,`po-tabs`,4)(9,`po-tab`,5)(10,`div`)(11,`label`,6),Tk(12,`sample-po-toaster-basic/sample-po-toaster-basic.component.html`),Zg(),Jc(13,`pre`,7),Tk(14,`<div class="po-row">
+  <po-toaster class="po-md-12" p-message="Toaster Basic - Information" p-type="information"></po-toaster>
+</div>
+`),Zg()()(),Jc(15,`po-tab`,8)(16,`div`)(17,`label`,6),Tk(18,`sample-po-toaster-basic/sample-po-toaster-basic.component.ts`),Zg(),Jc(19,`pre`,9),Tk(20,`import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+@Component({
+  selector: 'sample-po-toaster-basic',
+  templateUrl: './sample-po-toaster-basic.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  standalone: false
+})
+export class SamplePoToasterBasicComponent {}
+`),Zg()()()()(),Jc(21,`div`,10),_u(22,`sample-po-toaster-basic`),Zg(),_u(23,`hr`)),a&2&&(Ig(5),yk(`po-icon `+n.sampleCodeButtonIcon),Ig(),nm(` `,n.sampleCodeButtonLabel),Ig(),Ab(`ngClass`,Bk(4,be,n.hideSampleCodeTabs)))},dependencies:[eF,P,tre,are,le],encapsulation:2,changeDetection:1})}return i})();var fe=[`toasterRef`];var me=(()=>{class i{poModal;toasterRef;message=`Title Message`;supportMessage=`Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha. Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha.`;actionLabel=`action`;type=Eo.Information;mode=Lb.Inline;showIcon=!0;hasAction=!1;action=void 0;properties=[];sizeActions=`medium`;propertiesOptions=[{value:`hide`,label:`Hide`},{value:`showClose`,label:`Show close`}];sizeActionsOptions=[{label:`small`,value:`small`},{label:`medium`,value:`medium`}];typeOptions=[{label:`Success`,value:Eo.Success},{label:`Error`,value:Eo.Error},{label:`Warning`,value:Eo.Warning},{label:`Information`,value:Eo.Information}];constructor(){}changeAction(){this.hasAction?this.action=()=>this.poModal.open():this.action=void 0}restore(){this.message=`Title Message`,this.supportMessage=`Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha. Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha.`,this.actionLabel=`action`,this.type=Eo.Information,this.mode=Lb.Inline,this.showIcon=!0,this.hasAction=!1,this.action=void 0,this.properties=[],this.sizeActions=`medium`}static ɵfac=function(a){return new(a||i)};static ɵcmp=Jn({type:i,selectors:[[`sample-po-toaster-labs`]],viewQuery:function(a,n){if(a&1&&Cu(ia,7)(fe,5),a&2){let m;No(m=xo())&&(n.poModal=m.first),No(m=xo())&&(n.toasterRef=m.first)}},standalone:!1,decls:19,vars:19,consts:[[`toasterRef`,``],[`f`,`ngForm`],[1,`po-row`],[1,`po-md-12`,3,`p-size-actions`,`p-hide`,`p-mode`,`p-message`,`p-support-message`,`p-type`,`p-show-close`,`p-action`,`p-action-label`],[`p-columns`,`4`,`p-label`,`Type`,`name`,`type`,1,`po-lg-12`,3,`ngModelChange`,`ngModel`,`p-options`],[`p-label`,`Message`,`name`,`message`,`p-clean`,``,`p-required`,``,1,`po-md-6`,3,`ngModelChange`,`ngModel`],[`p-label`,`Support Message`,`name`,`supportMessage`,`p-clean`,``,1,`po-md-6`,3,`ngModelChange`,`ngModel`],[`p-label`,`Has Action`,`name`,`action`,1,`po-md-6`,`po-lg-2`,3,`p-change`,`ngModelChange`,`ngModel`],[`p-label`,`Action Label`,`name`,`actionLabel`,`p-clean`,``,1,`po-md-6`,`po-lg-4`,3,`ngModelChange`,`ngModel`],[`name`,`properties`,`p-label`,`Properties`,1,`po-lg-6`,3,`ngModelChange`,`ngModel`,`p-options`],[`name`,`sizeActions`,`p-label`,`Size actions`,`p-help`,`Para aplicar o tamanho small, configure o nível de acessibilidade para AA, ajustável no navbar ou serviço de tema (https://po-ui.io/documentation/po-theme).`,1,`po-lg-6`,3,`ngModelChange`,`ngModel`,`p-options`],[`p-label`,`Sample Restore`,1,`po-md-6`,`po-lg-3`,3,`p-click`],[`p-title`,`PO Notification`]],template:function(a,n){if(a&1){let m=ZO();Jc(0,`div`,2),_u(1,`po-toaster`,3,0),Zg(),_u(3,`po-divider`),Jc(4,`form`,null,1)(6,`po-radio-group`,4),W0(),Zb(`ngModelChange`,function(l){return H_(m),Ak(n.type,l)||(n.type=l),$_(l)}),Zg(),Jc(7,`po-input`,5),W0(),Zb(`ngModelChange`,function(l){return H_(m),Ak(n.message,l)||(n.message=l),$_(l)}),Zg(),Jc(8,`po-input`,6),W0(),Zb(`ngModelChange`,function(l){return H_(m),Ak(n.supportMessage,l)||(n.supportMessage=l),$_(l)}),Zg(),Jc(9,`po-switch`,7),W0(),vt(`p-change`,function(){return n.changeAction()}),Zb(`ngModelChange`,function(l){return H_(m),Ak(n.hasAction,l)||(n.hasAction=l),$_(l)}),Zg(),Jc(10,`po-input`,8),W0(),Zb(`ngModelChange`,function(l){return H_(m),Ak(n.actionLabel,l)||(n.actionLabel=l),$_(l)}),Zg(),Jc(11,`div`,2)(12,`po-checkbox-group`,9),W0(),Zb(`ngModelChange`,function(l){return H_(m),Ak(n.properties,l)||(n.properties=l),$_(l)}),Zg(),Jc(13,`po-radio-group`,10),W0(),Zb(`ngModelChange`,function(l){return H_(m),Ak(n.sizeActions,l)||(n.sizeActions=l),$_(l)}),Zg()(),_u(14,`po-divider`),Jc(15,`div`,2)(16,`po-button`,11),vt(`p-click`,function(){return n.restore()}),Zg()()(),Jc(17,`po-modal`,12),Tk(18,` Notification Action `),Zg()}a&2&&(Ig(),Ab(`p-size-actions`,n.sizeActions)(`p-hide`,n.properties.includes(`hide`))(`p-mode`,n.mode)(`p-message`,n.message)(`p-support-message`,n.supportMessage)(`p-type`,n.type)(`p-show-close`,n.properties.includes(`showClose`))(`p-action`,n.action)(`p-action-label`,n.actionLabel),Ig(5),Kb(`ngModel`,n.type),Ab(`p-options`,n.typeOptions),Y0(),Ig(),Kb(`ngModel`,n.message),Y0(),Ig(),Kb(`ngModel`,n.supportMessage),Y0(),Ig(),Kb(`ngModel`,n.hasAction),Y0(),Ig(),Kb(`ngModel`,n.actionLabel),Y0(),Ig(2),Kb(`ngModel`,n.properties),Ab(`p-options`,n.propertiesOptions),Y0(),Ig(),Kb(`ngModel`,n.sizeActions),Ab(`p-options`,n.sizeActionsOptions),Y0())},dependencies:[NZ,TZ,RZ,JL,qL,oi,Nf,I4,j4,Zte,R4,ia,die],encapsulation:2,changeDetection:1})}return i})();var xe=i=>({"docs-sample-code-tabs":i});var de=(()=>{class i{hideSampleCodeTabs=!0;sampleCodeButtonLabel=`Talk is cheap, show me the code!`;sampleCodeButtonIcon=`an an-plus`;toggleSampleCodeTabs(){this.hideSampleCodeTabs=!this.hideSampleCodeTabs,this.sampleCodeButtonLabel=this.hideSampleCodeTabs?`Talk is cheap, show me the code!`:`Okay, hide the code`,this.sampleCodeButtonIcon=this.hideSampleCodeTabs?`an an-plus`:`an an-minus`}static ɵfac=function(a){return new(a||i)};static ɵcmp=Jn({type:i,selectors:[[`sample-po-toaster-labs-view`]],standalone:!1,decls:24,vars:6,consts:[[1,`sample-blockquote`],[1,`sample-title`,`po-font-text-large-bold`],[1,`show-me-the-code`,3,`click`],[3,`ngClass`],[`p-size`,`2`],[`p-label`,`HTML`,`p-active`,``],[1,`doc-label-path`],[`appCodeHighlight`,``,1,`html`],[`p-label`,`TS`],[`appCodeHighlight`,``,1,`typescript`],[1,`docs-sample-container`]],template:function(a,n){a&1&&(_u(0,`br`),Jc(1,`blockquote`,0)(2,`label`,1),Tk(3,`PO Toaster Labs`),Zg(),Jc(4,`a`,2),vt(`click`,function(){return n.toggleSampleCodeTabs()}),_u(5,`span`),Tk(6),Zg()(),Jc(7,`div`,3)(8,`po-tabs`,4)(9,`po-tab`,5)(10,`div`)(11,`label`,6),Tk(12,`sample-po-toaster-labs/sample-po-toaster-labs.component.html`),Zg(),Jc(13,`pre`,7),Tk(14,`<div class="po-row">
+  <po-toaster
+    #toasterRef
+    class="po-md-12"
+    [p-size-actions]="sizeActions"
+    [p-hide]="properties.includes('hide')"
+    [p-mode]="mode"
+    [p-message]="message"
+    [p-support-message]="supportMessage"
+    [p-type]="type"
+    [p-show-close]="properties.includes('showClose')"
+    [p-action]="action"
+    [p-action-label]="actionLabel"
+  ></po-toaster>
+</div>
+
+<po-divider />
+
+<form #f="ngForm">
+  <po-radio-group
+    p-columns="4"
+    p-label="Type"
+    class="po-lg-12"
+    name="type"
+    [(ngModel)]="type"
+    [p-options]="typeOptions"
+  ></po-radio-group>
+
+  <po-input p-label="Message" class="po-md-6" name="message" [(ngModel)]="message" p-clean p-required> </po-input>
+
+  <po-input p-label="Support Message" class="po-md-6" name="supportMessage" [(ngModel)]="supportMessage" p-clean>
+  </po-input>
+
+  <po-switch
+    p-label="Has Action"
+    class="po-md-6 po-lg-2"
+    (p-change)="changeAction()"
+    name="action"
+    [(ngModel)]="hasAction"
+  >
+  </po-switch>
+
+  <po-input p-label="Action Label" class="po-md-6 po-lg-4" name="actionLabel" [(ngModel)]="actionLabel" p-clean>
+  </po-input>
+
+  <div class="po-row">
+    <po-checkbox-group
+      class="po-lg-6"
+      name="properties"
+      [(ngModel)]="properties"
+      p-label="Properties"
+      [p-options]="propertiesOptions"
+    >
+    </po-checkbox-group>
+
+    <po-radio-group
+      class="po-lg-6"
+      name="sizeActions"
+      [(ngModel)]="sizeActions"
+      p-label="Size actions"
+      p-help="Para aplicar o tamanho small, configure o n\xEDvel de acessibilidade para AA, ajust\xE1vel no navbar ou servi\xE7o de tema (https://po-ui.io/documentation/po-theme)."
+      [p-options]="sizeActionsOptions"
+    >
+    </po-radio-group>
+  </div>
+
+  <po-divider></po-divider>
+
+  <div class="po-row">
+    <po-button class="po-md-6 po-lg-3" p-label="Sample Restore" (p-click)="restore()"> </po-button>
+  </div>
+</form>
+
+<po-modal p-title="PO Notification"> Notification Action </po-modal>
+`),Zg()()(),Jc(15,`po-tab`,8)(16,`div`)(17,`label`,6),Tk(18,`sample-po-toaster-labs/sample-po-toaster-labs.component.ts`),Zg(),Jc(19,`pre`,9),Tk(20,`import { Component, ViewChild, ChangeDetectionStrategy } from '@angular/core';
+import {
+  PoCheckboxGroupOption,
+  PoModalComponent,
+  PoRadioGroupOption,
+  PoToasterComponent,
+  PoToasterMode,
+  PoToasterType
+} from '@po-ui/ng-components';
+
+@Component({
+  selector: 'sample-po-toaster-labs',
+  templateUrl: './sample-po-toaster-labs.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  standalone: false
+})
+export class SamplePoToasterLabsComponent {
+  @ViewChild(PoModalComponent, { static: true }) poModal: PoModalComponent;
+  @ViewChild('toasterRef') toasterRef: PoToasterComponent;
+
+  message = 'Title Message';
+  supportMessage =
+    'Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha. Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha.';
+  actionLabel = 'action';
+  type: PoToasterType = PoToasterType.Information;
+  mode = PoToasterMode.Inline;
+  showIcon = true;
+  hasAction = false;
+  action = undefined;
+  properties: Array<string> = [];
+  sizeActions: string = 'medium';
+
+  public readonly propertiesOptions: Array<PoCheckboxGroupOption> = [
+    { value: 'hide', label: 'Hide' },
+    { value: 'showClose', label: 'Show close' }
+  ];
+
+  public readonly sizeActionsOptions: Array<PoRadioGroupOption> = [
+    { label: 'small', value: 'small' },
+    { label: 'medium', value: 'medium' }
+  ];
+
+  public readonly typeOptions: Array<PoRadioGroupOption> = [
+    { label: 'Success', value: PoToasterType.Success },
+    { label: 'Error', value: PoToasterType.Error },
+    { label: 'Warning', value: PoToasterType.Warning },
+    { label: 'Information', value: PoToasterType.Information }
+  ];
+
+  constructor() {}
+
+  changeAction() {
+    if (this.hasAction) {
+      this.action = () => this.poModal.open();
+    } else {
+      this.action = undefined;
+    }
+  }
+
+  restore() {
+    this.message = 'Title Message';
+    this.supportMessage =
+      'Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha. Exemplo de uma mensagem bem mais longa que poderia ocupar mais de uma linha.';
+    this.actionLabel = 'action';
+    this.type = PoToasterType.Information;
+    this.mode = PoToasterMode.Inline;
+    this.showIcon = true;
+    this.hasAction = false;
+    this.action = undefined;
+    this.properties = [];
+    this.sizeActions = 'medium';
+  }
+}
+`),Zg()()()()(),Jc(21,`div`,10),_u(22,`sample-po-toaster-labs`),Zg(),_u(23,`hr`)),a&2&&(Ig(5),yk(`po-icon `+n.sampleCodeButtonIcon),Ig(),nm(` `,n.sampleCodeButtonLabel),Ig(),Ab(`ngClass`,Bk(4,xe,n.hideSampleCodeTabs)))},dependencies:[eF,P,tre,are,me],encapsulation:2,changeDetection:1})}return i})();var ce=(()=>{class i{static ɵfac=function(a){return new(a||i)};static ɵcmp=Jn({type:i,selectors:[[`sample-po-toaster-doc`]],standalone:!1,decls:499,vars:0,consts:[[1,`docs-api`],[1,`docs-api-module-import`],[1,`docs-api-class-description`],[1,`docs-api-h3`],[1,`docs-api-class-name`],[1,`doc-code`],[`href`,`https://po-ui.io/guides/theme-customization`],[1,`docs-api-directive-selectors`],[1,`docs-api-class-selector-label`],[`appCodeHighlight`,``],[1,`docs-api-h5`,`docs-api-method-header`],[1,`docs-api-properties-table`],[1,`docs-api-properties-header-row`],[1,`docs-api-properties-th`],[1,`docs-api-properties-row`],[1,`docs-api-properties-name-cell`],[1,`docs-api-input-marker`],[1,`docs-api-input-alias`],[1,`docs-api-properties-type-cell`],[`pan`,``,1,`docs-api-property-type`,`Function`],[1,`docs-api-property-default`],[1,`docs-api-property-description`],[`pan`,``,1,`docs-api-property-type`,`string`],[`pan`,``,1,`docs-api-property-type`,`boolean`],[1,`docs-api-output-marker`],[1,`docs-api-output-alias`],[`pan`,``,1,`docs-api-property-type`,`EventEmitter`],[`href`,`https://po-ui.io/documentation/po-theme`],[`pan`,``,1,`docs-api-property-type`,`PoToasterType`]],template:function(a,n){a&1&&(Jc(0,`div`,0)(1,`p`,1)(2,`code`),Tk(3,`import { PoToasterModule } from '@po-ui/ng-components';`),Zg()(),Jc(4,`div`,2)(5,`p`),Tk(6,`Módulo do componente po-toaster.`),Zg()(),Jc(7,`h3`,3),Tk(8,`Componente`),Zg(),Jc(9,`h4`,4)(10,`code`,5),Tk(11,`PoToasterComponent`),Zg()(),Jc(12,`div`,2)(13,`p`),Tk(14,`O Toaster serve para exibir uma mensagem temporária em linha na interface, podendo ou não ser removida pelos usuários a depender do uso especificado.`),Zg(),Jc(15,`h4`),Tk(16,`Acessibilidade tratada no componente`),Zg(),Jc(17,`p`),Tk(18,`Algumas diretrizes de acessibilidade já são tratadas no componente, internamente, e não podem ser alteradas pelo proprietário do conteúdo. São elas:`),Zg(),Jc(19,`ul`)(20,`li`),Tk(21,`Permitir a interação via teclado (2.1.1: Keyboard (A));`),Zg(),Jc(22,`li`),Tk(23,`Permitir que o usuário feche facilmente o toaster e não retirar o foco de onde está. (2.2.4: Interrupções (AAA));`),Zg(),Jc(24,`li`),Tk(25,`Preservar o foco visível na navegação via teclado. (2.4.7: Foco visível (A));`),Zg(),Jc(26,`li`),Tk(27,`Áreas de clique ou toque para elementos interativos devem ter pelo menos 44x44 pixels (2.5.5: Área de clique (AAA));`),Zg()(),Jc(28,`h4`),Tk(29,`Tokens customizáveis`),Zg(),Jc(30,`p`),Tk(31,`É possível alterar o estilo do componente usando os seguintes tokens (CSS):`),Zg(),Jc(32,`blockquote`)(33,`p`),Tk(34,`Para maiores informações, acesse o guia `),Jc(35,`a`,6),Tk(36,`Personalizando o Tema Padrão com Tokens CSS`),Zg(),Tk(37,`.`),Zg()(),Jc(38,`table`)(39,`thead`)(40,`tr`)(41,`th`),Tk(42,`Propriedade`),Zg(),Jc(43,`th`),Tk(44,`Descrição`),Zg(),Jc(45,`th`),Tk(46,`Valor Padrão`),Zg()()(),Jc(47,`tbody`)(48,`tr`)(49,`td`)(50,`strong`),Tk(51,`Default Values`),Zg()(),_u(52,`td`)(53,`td`),Zg(),Jc(54,`tr`)(55,`td`)(56,`code`),Tk(57,`--font-family`),Zg()(),Jc(58,`td`),Tk(59,`Família tipográfica usada`),Zg(),Jc(60,`td`)(61,`code`),Tk(62,`var(--font-family-theme)`),Zg()()(),Jc(63,`tr`)(64,`td`)(65,`code`),Tk(66,`--font-color`),Zg()(),Jc(67,`td`),Tk(68,`Cor principal do texto`),Zg(),Jc(69,`td`)(70,`code`),Tk(71,`var(--color-neutral-dark-90)`),Zg()()(),Jc(72,`tr`)(73,`td`)(74,`code`),Tk(75,`--font-color-support`),Zg()(),Jc(76,`td`),Tk(77,`Cor principal do texto de supporte`),Zg(),Jc(78,`td`)(79,`code`),Tk(80,`var(--color-neutral-dark-80)`),Zg()()(),Jc(81,`tr`)(82,`td`)(83,`code`),Tk(84,`--border-radius`),Zg()(),Jc(85,`td`),Tk(86,`Contém o valor do raio dos cantos do elemento\xA0`),Zg(),Jc(87,`td`)(88,`code`),Tk(89,`var(--border-radius-md)`),Zg()()(),Jc(90,`tr`)(91,`td`)(92,`strong`),Tk(93,`Type Success`),Zg()(),_u(94,`td`)(95,`td`),Zg(),Jc(96,`tr`)(97,`td`)(98,`code`),Tk(99,`--color-success`),Zg()(),Jc(100,`td`),Tk(101,`Cor principal no tipo success`),Zg(),Jc(102,`td`)(103,`code`),Tk(104,`var(--color-feedback-positive-base)`),Zg()()(),Jc(105,`tr`)(106,`td`)(107,`code`),Tk(108,`--background-success`),Zg()(),Jc(109,`td`),Tk(110,`Cor de fundo principal no tipo success`),Zg(),Jc(111,`td`)(112,`code`),Tk(113,`var(--color-feedback-positive-lightest)`),Zg()()(),Jc(114,`tr`)(115,`td`)(116,`code`),Tk(117,`--border-color-success`),Zg()(),Jc(118,`td`),Tk(119,`Cor da borda principal tipo success`),Zg(),Jc(120,`td`)(121,`code`),Tk(122,`var(--color-feedback-positive-lighter)`),Zg()()(),Jc(123,`tr`)(124,`td`)(125,`strong`),Tk(126,`Type Error`),Zg()(),_u(127,`td`)(128,`td`),Zg(),Jc(129,`tr`)(130,`td`)(131,`code`),Tk(132,`--color-error`),Zg()(),Jc(133,`td`),Tk(134,`Cor principal no tipo error`),Zg(),Jc(135,`td`)(136,`code`),Tk(137,`var(--color-feedback-negative-base)`),Zg()()(),Jc(138,`tr`)(139,`td`)(140,`code`),Tk(141,`--background-error`),Zg()(),Jc(142,`td`),Tk(143,`Cor de fundo principal no tipo error`),Zg(),Jc(144,`td`)(145,`code`),Tk(146,`var(--color-feedback-negative-lightest)`),Zg()()(),Jc(147,`tr`)(148,`td`)(149,`code`),Tk(150,`--border-color-error`),Zg()(),Jc(151,`td`),Tk(152,`Cor da borda principal tipo error`),Zg(),Jc(153,`td`)(154,`code`),Tk(155,`var(--color-feedback-negative-lighter)`),Zg()()(),Jc(156,`tr`)(157,`td`)(158,`strong`),Tk(159,`Type Warning`),Zg()(),_u(160,`td`)(161,`td`),Zg(),Jc(162,`tr`)(163,`td`)(164,`code`),Tk(165,`--color-icon-warning`),Zg()(),Jc(166,`td`),Tk(167,`Cor principal do icone no tipo warning`),Zg(),Jc(168,`td`)(169,`code`),Tk(170,`var(--color-neutral-dark-90)`),Zg()()(),Jc(171,`tr`)(172,`td`)(173,`code`),Tk(174,`--color-warning`),Zg()(),Jc(175,`td`),Tk(176,`Cor principal no tipo warning`),Zg(),Jc(177,`td`)(178,`code`),Tk(179,`var(--color-feedback-warning-base)`),Zg()()(),Jc(180,`tr`)(181,`td`)(182,`code`),Tk(183,`--background-warning`),Zg()(),Jc(184,`td`),Tk(185,`Cor de fundo principal no tipo warning`),Zg(),Jc(186,`td`)(187,`code`),Tk(188,`var(--color-feedback-warning-lightest)`),Zg()()(),Jc(189,`tr`)(190,`td`)(191,`code`),Tk(192,`--border-color-warning`),Zg()(),Jc(193,`td`),Tk(194,`Cor da borda principal tipo warning`),Zg(),Jc(195,`td`)(196,`code`),Tk(197,`var(--color-feedback-warning-lighter)`),Zg()()(),Jc(198,`tr`)(199,`td`)(200,`strong`),Tk(201,`Type Info`),Zg()(),_u(202,`td`)(203,`td`),Zg(),Jc(204,`tr`)(205,`td`)(206,`code`),Tk(207,`--color-info`),Zg()(),Jc(208,`td`),Tk(209,`Cor principal no tipo info`),Zg(),Jc(210,`td`)(211,`code`),Tk(212,`var(--color-feedback-info-base)`),Zg()()(),Jc(213,`tr`)(214,`td`)(215,`code`),Tk(216,`--background-info`),Zg()(),Jc(217,`td`),Tk(218,`Cor de fundo principal no tipo info`),Zg(),Jc(219,`td`)(220,`code`),Tk(221,`var(--color-feedback-info-lightest)`),Zg()()(),Jc(222,`tr`)(223,`td`)(224,`code`),Tk(225,`--border-color-info`),Zg()(),Jc(226,`td`),Tk(227,`Cor da borda principal tipo info`),Zg(),Jc(228,`td`)(229,`code`),Tk(230,`var(--color-feedback-info-lighter)`),Zg()()()()()(),Jc(231,`div`,7)(232,`h4`,8),Tk(233,`Seletor`),Zg(),Jc(234,`pre`,9),Tk(235,`<po-toaster
+    p-action="Function"
+    p-action-label="string"
+    p-hide="boolean"
+    (p-hide-change)="EventEmitter"
+    p-message="string"
+    p-show-close="boolean"
+    p-size-actions="string"
+    p-support-message="string"
+    p-type="PoToasterType" >
+</po-toaster>
+`),Zg()(),Jc(236,`h4`,10),Tk(237,`Propriedades`),Zg(),Jc(238,`table`,11)(239,`tr`,12)(240,`th`,13),Tk(241,`Nome`),Zg(),Jc(242,`th`,13),Tk(243,`Tipo`),Zg(),Jc(244,`th`,13),Tk(245,`Padrão`),Zg(),Jc(246,`th`,13),Tk(247,`Descrição`),Zg()(),Jc(248,`tr`,14)(249,`td`,15)(250,`div`,16)(251,`span`,17),Tk(252,` p-action`),_u(253,`br`),Zg()()(),Jc(254,`td`,18)(255,`code`,19),Tk(256,`Function`),Zg()(),Jc(257,`td`,20),Tk(258,`-`),Zg(),Jc(259,`td`,21)(260,`em`)(261,`strong`),Tk(262,`(opcional)`),Zg()(),Jc(263,`p`),Tk(264,`Ação para a notificação.`),Zg()()(),Jc(265,`tr`,14)(266,`td`,15)(267,`div`,16)(268,`span`,17),Tk(269,` p-action-label`),_u(270,`br`),Zg()()(),Jc(271,`td`,18)(272,`code`,22),Tk(273,`string`),Zg()(),Jc(274,`td`,20),Tk(275,`-`),Zg(),Jc(276,`td`,21)(277,`em`)(278,`strong`),Tk(279,`(opcional)`),Zg()(),Jc(280,`p`),Tk(281,`Label do botão quando houver uma ação definida.`),Zg()()(),Jc(282,`tr`,14)(283,`td`,15)(284,`div`,16)(285,`span`,17),Tk(286,` p-hide`),_u(287,`br`),Zg()()(),Jc(288,`td`,18)(289,`code`,23),Tk(290,`boolean`),Zg()(),Jc(291,`td`,20)(292,`p`)(293,`code`),Tk(294,`false`),Zg()()(),Jc(295,`td`,21)(296,`em`)(297,`strong`),Tk(298,`(opcional)`),Zg()(),Jc(299,`p`),Tk(300,`Define se o Toaster esta invisivel.`),Zg()()(),Jc(301,`tr`,14)(302,`td`,15)(303,`div`,24)(304,`span`,25),Tk(305,` (p-hide-change)`),_u(306,`br`),Zg()()(),Jc(307,`td`,18)(308,`code`,26),Tk(309,`EventEmitter`),Zg()(),Jc(310,`td`,20),Tk(311,`-`),Zg(),Jc(312,`td`,21)(313,`em`)(314,`strong`),Tk(315,`(opcional)`),Zg()(),Jc(316,`p`),Tk(317,`Evento emitido quando o valor de `),Jc(318,`code`),Tk(319,`isHide`),Zg(),Tk(320,` é alterado.`),Zg()()(),Jc(321,`tr`,14)(322,`td`,15)(323,`div`,16)(324,`span`,17),Tk(325,` p-message`),_u(326,`br`),Zg()()(),Jc(327,`td`,18)(328,`code`,22),Tk(329,`string`),Zg()(),Jc(330,`td`,20),Tk(331,`-`),Zg(),Jc(332,`td`,21)(333,`em`)(334,`strong`),Tk(335,`(opcional)`),Zg()(),Jc(336,`p`),Tk(337,`Mensagem a ser exibida na notificação.`),Zg()()(),Jc(338,`tr`,14)(339,`td`,15)(340,`div`,16)(341,`span`,17),Tk(342,` p-show-close`),_u(343,`br`),Zg()()(),Jc(344,`td`,18)(345,`code`,23),Tk(346,`boolean`),Zg()(),Jc(347,`td`,20)(348,`p`)(349,`code`),Tk(350,`true`),Zg()()(),Jc(351,`td`,21)(352,`em`)(353,`strong`),Tk(354,`(opcional)`),Zg()(),Jc(355,`p`),Tk(356,`Exibe botão de fechar no toaster modo inline.`),Zg()()(),Jc(357,`tr`,14)(358,`td`,15)(359,`div`,16)(360,`span`,17),Tk(361,` p-size-actions`),_u(362,`br`),Zg()()(),Jc(363,`td`,18)(364,`code`,22),Tk(365,`string`),Zg()(),Jc(366,`td`,20)(367,`p`)(368,`code`),Tk(369,`medium`),Zg()()(),Jc(370,`td`,21)(371,`em`)(372,`strong`),Tk(373,`(opcional)`),Zg()(),Jc(374,`p`),Tk(375,`Define o tamanho das ações no componente:`),Zg(),Jc(376,`ul`)(377,`li`)(378,`code`),Tk(379,`small`),Zg(),Tk(380,`: aplica a medida small de cada componente (disponível apenas para acessibilidade AA).`),Zg(),Jc(381,`li`)(382,`code`),Tk(383,`medium`),Zg(),Tk(384,`: aplica a medida medium de cada componente.`),Zg()(),Jc(385,`blockquote`)(386,`p`),Tk(387,`Caso a acessibilidade AA não esteja configurada, o tamanho `),Jc(388,`code`),Tk(389,`medium`),Zg(),Tk(390,` ser\xE1 mantido.
+Para mais detalhes, consulte a documenta\xE7\xE3o do `),Jc(391,`a`,27),Tk(392,`po-theme`),Zg(),Tk(393,`.`),Zg()()()(),Jc(394,`tr`,14)(395,`td`,15)(396,`div`,16)(397,`span`,17),Tk(398,` p-support-message`),_u(399,`br`),Zg()()(),Jc(400,`td`,18)(401,`code`,22),Tk(402,`string`),Zg()(),Jc(403,`td`,20),Tk(404,`-`),Zg(),Jc(405,`td`,21)(406,`em`)(407,`strong`),Tk(408,`(opcional)`),Zg()(),Jc(409,`p`),Tk(410,`Mensagem de suporte a ser exibida na notificação.`),Zg()()(),Jc(411,`tr`,14)(412,`td`,15)(413,`div`,16)(414,`span`,17),Tk(415,` p-type`),_u(416,`br`),Zg()()(),Jc(417,`td`,18)(418,`code`,28),Tk(419,`PoToasterType`),Zg()(),Jc(420,`td`,20)(421,`p`)(422,`code`),Tk(423,`PoToasterType.Information`),Zg()()(),Jc(424,`td`,21)(425,`em`)(426,`strong`),Tk(427,`(opcional)`),Zg()(),Jc(428,`p`),Tk(429,`Determina o tipo de notificação.`),Zg(),Jc(430,`p`),Tk(431,`Valores aceitos: `),Jc(432,`code`),Tk(433,`error`),Zg(),Tk(434,`, `),Jc(435,`code`),Tk(436,`information`),Zg(),Tk(437,`, `),Jc(438,`code`),Tk(439,`success`),Zg(),Tk(440,` e `),Jc(441,`code`),Tk(442,`warning`),Zg(),Tk(443,`.`),Zg()()()(),Jc(444,`h3`),Tk(445,`Enums`),Zg(),Jc(446,`h4`,4)(447,`code`,5),Tk(448,`PoToasterType`),Zg()(),Jc(449,`div`,2)(450,`p`),Tk(451,`Define os tipos possíveis para o `),Jc(452,`code`),Tk(453,`PoToasterComponent`),Zg(),Tk(454,`.`),Zg()(),Jc(455,`h4`,10),Tk(456,`Propriedades`),Zg(),Jc(457,`table`,11)(458,`tr`,12)(459,`th`,13),Tk(460,`Nome`),Zg(),Jc(461,`th`,13),Tk(462,`Descrição`),Zg()(),Jc(463,`tr`,14)(464,`td`,15)(465,`div`,16)(466,`span`,17),Tk(467,` Error`),_u(468,`br`),Zg()()(),Jc(469,`td`,21)(470,`p`),Tk(471,`Tipo de toaster para mensagens de erro.`),Zg()()(),Jc(472,`tr`,14)(473,`td`,15)(474,`div`,16)(475,`span`,17),Tk(476,` Information`),_u(477,`br`),Zg()()(),Jc(478,`td`,21)(479,`p`),Tk(480,`Tipo de toaster para mensagens informativas.`),Zg()()(),Jc(481,`tr`,14)(482,`td`,15)(483,`div`,16)(484,`span`,17),Tk(485,` Success`),_u(486,`br`),Zg()()(),Jc(487,`td`,21)(488,`p`),Tk(489,`Tipo de toaster para mensagens de sucesso.`),Zg()()(),Jc(490,`tr`,14)(491,`td`,15)(492,`div`,16)(493,`span`,17),Tk(494,` Warning`),_u(495,`br`),Zg()()(),Jc(496,`td`,21)(497,`p`),Tk(498,`Tipo de toaster para mensagens de atenção.`),Zg()()()()())},dependencies:[P],encapsulation:2,changeDetection:1})}return i})();function ye(i,we){if(i&1){let s=ZO();Jc(0,`po-tab`,4),vt(`p-click`,function(){H_(s);let n=nk();return $_(n.changeTab(`web`))}),_u(1,`sample-po-toaster-basic-view`)(2,`sample-po-toaster-labs-view`),Zg()}if(i&2){let s=nk();Ab(`p-active`,s.activeTab===`web`)}}var Pe=[{path:``,component:(()=>{class i{route;router;sub;hidePoWebSample=!0;samplesLength=2;activeTab=`doc`;actions=[{label:`Documentação`,action:this.goBack.bind(this),icon:`an an-file-text`},{label:`Colabore`,action:this.improveDocs.bind(this)}];constructor(s,a){this.route=s,this.router=a}goBack(){this.router.navigate([`documentation`])}improveDocs(){this.router.navigate([`guides/development-flow`])}ngOnInit(){this.sub=this.route.queryParams.subscribe(s=>{let a=s.view;this.hidePoWebSample=this.samplesLength===0,this.activeTab=this.hidePoWebSample?`doc`:a||`web`})}changeTab(s){this.router.navigate([],{queryParams:{view:s},queryParamsHandling:`merge`}),this.activeTab=s}ngOnDestroy(){this.sub.unsubscribe()}static ɵfac=function(a){return new(a||i)(I(ar),I(An))};static ɵcmp=Jn({type:i,selectors:[[`ng-component`]],standalone:!1,decls:5,vars:3,consts:[[`p-title`,`Toaster`,3,`p-actions`],[`p-size`,`1`],[`p-label`,`Exemplos`,3,`p-active`],[`p-label`,`Documentação`,3,`p-click`,`p-active`],[`p-label`,`Exemplos`,3,`p-click`,`p-active`]],template:function(a,n){a&1&&(Jc(0,`po-page-default`,0)(1,`po-tabs`,1),VO(2,ye,3,1,`po-tab`,2),Jc(3,`po-tab`,3),vt(`p-click`,function(){return n.changeTab(`doc`)}),_u(4,`sample-po-toaster-doc`),Zg()()()),a&2&&(Ab(`p-actions`,n.actions),Ig(2),BO(n.hidePoWebSample?-1:2),Ig(),Ab(`p-active`,n.activeTab===`doc`))},dependencies:[Mze,tre,are,pe,de,ce],encapsulation:2,changeDetection:1})}return i})()}];var ge=(()=>{class i{static ɵfac=function(a){return new(a||i)};static ɵmod=ge$1({type:i});static ɵinj=de$1({imports:[WV.forChild(Pe),WV]})}return i})();var Ke=(()=>{class i{static ɵfac=function(a){return new(a||i)};static ɵmod=ge$1({type:i});static ɵinj=de$1({imports:[M,ge]})}return i})();export{Ke as DocPoToasterModule};
