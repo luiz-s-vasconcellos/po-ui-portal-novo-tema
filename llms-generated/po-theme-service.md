@@ -14,6 +14,13 @@ e contornos mais sutis.
 O serviço também possibilita configurar a **densidade de espaçamentos**, permitindo ajustar o espaço entre e dentro dos
 componentes. Essa configuração pode ser utilizada com qualquer nível de acessibilidade.
 
+> **Importante:** o novo tema padrão do PO UI (EVO, `poThemeDefault`) tem duas partes: as **cores**, que vêm do CSS
+`po-theme-default.min.css` do `@po-ui/style`, e os **ajustes de cada componente** (raios de borda, botão `glow`,
+campos e outros), que são aplicados por este serviço. Para ter o tema EVO completo, basta importar o `PoModule` e
+carregar o CSS `po-theme-default.min.css`: o `PoModule` já inicia o `PoThemeService`, que aplica os ajustes sozinho.
+Use o `setTheme` para escolher o modo claro ou escuro, o nível de acessibilidade ou o tema depreciado. Se a aplicação
+importar só módulos de componentes, sem o `PoModule` e sem injetar este serviço, ela recebe apenas as cores do EVO.
+
 > Observação: a customização das cores de `feedback` não é recomendada por motivos de acessibilidade e usabilidade.
 
 > Para saber mais sobre como customizar o tema padrão, consulte o item
